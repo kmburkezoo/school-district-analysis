@@ -24,24 +24,40 @@ Here too, the impact of removing the fraudulent grades makes minimal changes to 
 - % overall passing decreases from 90.9 to 90.6
 
 With such little gain, and penalties for academic dishonesty, one wonders why Thomas High School bothered to cheat at all!
-
-Original school summary
+- Original school summary
 ![per school summary](Resources/per_school_summary_df.png)
-Corrected school summary
+- Corrected school summary
 ![per school summary corrected](Resources/per_school_summary_df_corrected.png)
 
 ### Impact to Relative Performance
 Removing the altered grades does not change Thomas High School's relative performance: it remains the second-highest performing school in the district, though the gap between it and the third-ranking school is lessened.
+- Top schools (original)
 ![top schools](Resources/top_schools.png)
+- Top schools (corrected)
 ![top schools corrected](Resources/top_schools_corrected.png)
 
 ### Impact to Specified Metrics
-School district grades were analyzed along several different axes, both before and after the removal of the fraudulent scores. Here we can see impact to these metrics, including average scores by: grade and school, school spending, school size, and school type.\
-- math and reading scores by grade are 
-- scores by school spending
-- scores by school size
-- scores by school type
+School district grades were analyzed along several different axes, both before and after the removal of the fraudulent scores. Here we can see impact to these metrics, including average scores by: grade and school, school spending, school size, and school type.
+- Math and reading scores by grade, aside from the specific group whose scores were removed, are unaffected
+    |Math by Grade|Math by Grade, Corrected|Reading by Grade|Reading by Grade, Corrected|
+    |---|---|---|---|
+    |![math scores by grade](Resources/math_scores_by_grade.png)|![math scores by grade, corrected](Resources/math_scores_by_grade_corrected.png)|![reading scores by grade](Resources/reading_scores_by_grade.png)|![reading by grade, corrected](Resources/reading_scores_by_grade_corrected.png)
+- Scores by school spending: Thomas High School is in the third spending range, $630-644, so this is where we would expect to see any changes. However, the difference in the school's scores is so small that it does not impact the group average
+    - Scores by spending (original)
+![scores by spending](Resources/spending_summary_df.png)
+    - Scores by spending (corrected)
+![scores by spending, corrected](Resources/spending_summary_df_corrected.png)
+- Scores by school size: Thomas is a medium-sized school, but once more, thre removal of 461 students' scores is too small to impact the averaged scores the whole group. With or without the altered scores, small to medium-sized schools greatly outperform large schools
+    - Scores by school size (original)
+![scores by size](Resources/size_summary_df.png)
+    - Scores by school size (corrected)
+![scores by size, corrected](Resources/size_summary_df_corrected.png)
+- Scores by school type is also unchanged. Charter schools continue to significantly outperform district schools in all metrics, even with the removal of the altered scores.
+    - Scores by type (original)
+![scores by type](Resources/type_summary_df.png)
+    - Scores by type (corrected)
+![scores by type, corrected](Resources/type_summary_df_corrected.png)
 
 ## Summary
 
-Four changes!
+Removing the altered test scored did make small changes to Thomas High School's math and reading scores, as well as the percentage of students passing math, reading, or both. However, the students whose scores were removed accounted for only 1% of the district's students, a change so small that it had no impact on the metrics of either the entire district or smaller subsets of schools grouped by spending, size, or type.
